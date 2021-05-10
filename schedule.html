@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Contact Us</title>  
+      <link rel="stylesheet" type="text/css" href="TrueFixStyles.css">
+    </head>
+    <body class="contact">
+        <div id="header">
+            <ul style="display: inline;">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="techupdates.html">Tech Updates</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class= "active"><a href="login.html">Log In</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+             </ul>
+        </div>
+        <main>
+            <div class="contact-title">
+                <h1>Let us know!</h1>
+                <h2>We are always ready to serve you</h2>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form" method="POST" action="schedule.php">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                    <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                    <input name="phone" type="number" class="form-control" placeholder="Phone number" required><br>
+                    <textarea name="Address" class="form-control" placeholder="Address" row="4" required></textarea><br>
+                    <textarea name="message" class="form-control" placeholder="Enter necessary details of your repair" row="50" required></textarea><br>
+    
+                    <input type="submit" class="submit" value="SEND MESSAGE">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>TRUEFIX PVT. LTD<br>
+                E3450</p>
+        </footer>
+    </body>
+</html>

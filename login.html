@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Log In</title>  
+      <link rel="stylesheet" type="text/css" href="TrueFixStyles.css">
+    </head>
+    <body class= "bg">
+        <div id="header">
+            <ul style="display: inline;">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="techupdates.html">Tech Updates</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class= "active"><a href="login.html">Log In</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+             </ul>
+        </div>
+        <main>
+            <div class ='start'>
+                <form action="login.php" method="POST">
+                    <h1>Login Page</h1>
+                    <input type="email" name="email" class="txtbox" placeholder="Enter Email Id" required/><br><br>
+                    <input type="password" name="password" class="txtbox" placeholder="Enter Password" required/><br><br>
+    
+                    <input type="submit" name="login" class="btn" value="LOGIN"/><br><br>
+                    <input type="submit" name="back" class="btn" value="BACK"/>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>TRUEFIX PVT. LTD<br>
+                E3450</p>
+        </footer>
+    </body>
+</html>

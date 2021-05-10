@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Catalogue</title>  
+      <link rel="stylesheet" type="text/css" href="TrueFixStyles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <ul style="display: inline;">
+                    <li><a href="main.html">Home</a></li>
+                    <li class='active'><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="techupdates.html">Tech Updates</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-image-background" style="background-image:url(images/back9.jpeg)"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="LG.html"> <img src="pics/lg.png">
+                                </a>
+                            </div>
+
+                            <div class="subtitle">
+                                Line up of LG accessesories that we repair.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-image-background" style="background-image:url(images/back2.jpeg)"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="samsung.html"> <img src="pics/samsung.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Line up of Samsung accessesories that we repair.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-image-background" style="background-image:url(images/back3.jpeg)"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="bosch.html"><img src="pics/bosch.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Line up of Bosch accessesories that we repair.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-image-background" style="background-image: url(images/back4.jpeg);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="craftsman.html"><img src="pics/craftsman.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Line up of Craftsman accessesories that we repair.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-image-background" style="background-image:url(images/back10.jpeg)"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="electrolux.html"><img src="pics/electrolux.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Line up of Electrolux accessesories that we repair.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-image-background" style="background-image:url(images/back11.jpeg)"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="whirlpool.html"><img src="pics/whirlpool.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Line up of whirlpool accessesories that we repair.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const portfolioItems= document.querySelectorAll('.portfolio-item-wrapper')
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseout',() => {
+                portfolioItem.childNodes[1].classlist.remove('img-darken');
+            })
+        })
+    </script>
+</html>

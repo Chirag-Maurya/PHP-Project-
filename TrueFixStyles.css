@@ -1,0 +1,351 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    position: relative;
+    padding-bottom: 34px;
+    height: 100vh;
+}
+
+#header{
+    background-color: #555;
+    font-family: Arial;
+    height: 52px;
+    width:100%;
+    text-transform: uppercase;
+    overflow:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+
+/*________Footer_______*/
+#footer{
+    clear: left;
+    width: 100%;
+    background-color: #555;
+    font-family: Arial;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    bottom:0;
+}
+
+main{
+    /*width: 90vw;
+    margin:0 auto;*/
+    padding: 30px 20px 5px 110px;
+    min-height: calc(100vh - 52px - 48px);
+}
+
+article{
+    padding: 20px;
+    margin-bottom:20px;
+    border-radius: 5px;
+    background-color: black;
+    width: 90%;
+    opacity: 70%;
+}
+
+article:last-child{
+    margin-bottom: 0;
+}
+
+article h1{
+    color: rgb(0, 255, 170);
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+article h2{
+    color: aqua;
+    font-size: x-large;
+    font-weight: bold;
+    font-family:'Times', serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+ article p{
+    color: aliceblue;
+    font-size: large;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing: 3px;
+}
+
+footer{
+    text-align: center;
+    background-color: #555;
+    color: aliceblue;
+    padding: 1px;
+}
+
+
+/*________Navigation Bar_______*/
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+}
+
+li{
+    float:left;
+    border-right: 1px;
+}
+
+li:last-child{
+    float:left;
+    border-right: none;
+}
+
+li a{
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: black;
+}
+
+.active{
+    background-color: green;
+}
+
+.active a{
+    background-color: green !important;
+}
+
+nav{
+    background-color: #555;
+    font-family: Arial;
+    height: 120px;
+    text-transform: uppercase;
+}
+
+
+/*________Contact Form________*/
+.contact{
+    background-image:url(images/backcont.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+
+.contact-title{
+    margin-top:10px;
+    color:white;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.contact-title h1{
+    font-size:32px;
+    line-height: 10px;
+}
+
+.contact-title h2{
+    font-size:16px;
+    line-height: 10px;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width:600px;
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color:white;
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-family: 'sans-serif';
+}
+
+input{
+    height:45px;
+}
+
+.submit{
+    background: greenyellow;
+    border-color: transparent;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.submit:hover{
+    background-color:green;
+    cursor: pointer;
+}
+
+
+.contact-form{
+    text-align: center;
+}
+
+
+/*________Catalogue_______*/
+.portfolio-items-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position:relative;
+}
+
+.portfolio-image-background{
+    height: 350px;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: centre;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right:100px;
+}
+
+.logo-wrapper img{
+    width:50%;
+    margin-bottom: 10px;
+}
+
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight:600;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight:600;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    color:seashell;
+}
+
+.img-darken{
+    transition:1s;
+    filter: brightness(10%);
+}
+
+.content-wrapper{
+    height: 100vh;
+}
+
+
+/*________Catalogue Contents________*/
+.catbg{
+    background-color: rgb(5, 14, 46);
+}
+
+
+/*________About Us________*/
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width:100%;
+    height:100%;
+}
+
+.profile-content-wrapper{
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: aliceblue;
+}
+
+.about{
+    background-color: black;
+}
+
+
+/*________Login________*/
+.start{
+    text-align: center;
+    color: white;
+}
+
+.bg{
+    background-image: url(images/backlog.jpeg);
+    background-size: cover;
+}
+
+.txtbox{
+    width:600px;
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color:white;
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-family: 'sans-serif';
+}
+
+.btn{
+    background: greenyellow;
+    border-color: transparent;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn:hover{
+    background-color:green;
+    cursor: pointer;   
+}
+
+
+.logo{
+    float: left;
+    display:flex;
+    width:100px;
+    height:auto;
+}
